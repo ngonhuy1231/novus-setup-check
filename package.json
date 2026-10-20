@@ -1,0 +1,1 @@
+{"name":"novus-setup-check","version":"1.0.0","description":"Small web app with a simple frontend","main":"index.js","scripts":{"start":"node index.js"},"dependencies":{"express":"^4.19.0"}}
