@@ -1,0 +1,1 @@
+const express = require('express');\nconst app = express();\nconst PORT = process.env.PORT || 3000;\n\napp.get('/', (req, res) => {\n  res.json({ status: 'ok', service: 'novus-setup-check' });\n});\n\napp.get('/health', (req, res) => {\n  res.json({ healthy: true, uptime: process.uptime() });\n});\n\napp.listen(PORT, () => {\n  console.log('listening on port ' + PORT);\n});\n
